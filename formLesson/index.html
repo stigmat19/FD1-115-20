@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        body{
+            height: 10000px;
+        }
+        input{
+            border: 1px solid black;
+        }
+        textarea{
+            width: 200px;
+            height: 300px;
+            resize: none;
+        }
+        select{
+            width: 100px;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+
+    <form action="http://fe.it-academy.by/TestForm.php" method="post" enctype='multipart/form-data'>
+
+        <label for="aaa">Ваше имя</label>
+
+
+        <input type="password" name="job" autofocus> <br>
+
+        <input type="checkbox" name="education[]" value="yes1">
+        <input type="checkbox" name="education[]" value="yes2" checked>
+        <input type="checkbox" name="education[]" value="yes3"> <br>
+
+        <input type="radio" name="age" value="val1">
+        <input type="radio" name="age" value="val2">
+        <input type="radio" name="age" value="val3" checked>
+
+
+
+        <br>
+        <input type="reset" name="clear" value="clear"> <br>
+        <input type="button" name="btn" value="btn"> <br>
+        <input type="file" name="file"> <br>
+        <input type="hidden" name="id" value="111"> <br>
+
+        <textarea name="text"></textarea>
+        <input id="aaa" type="text" name="fio" value="test" placeholder="Hello"> <br>
+
+        <select name="select[]" size="6" multiple>
+            <optgroup label="Минск">
+                <option value="1">test1</option>
+                <option value="2">test2</option>
+                <option value="3">test3</option>
+            </optgroup>
+            <optgroup label="Гомель">
+                <option value="4">test4</option>
+                <option value="5">test5</option>
+                <option value="6">test6</option>
+            </optgroup>
+
+
+        </select>
+
+        <input type="submit" value="Отправить">
+
+        <br>
+
+        <input type="radio" name="test" value="val1">
+        <input type="radio" name="test" value="val2">
+        <input type="radio" name="test" value="val3">
+
+    </form>
+
+
+</body>
+</html>

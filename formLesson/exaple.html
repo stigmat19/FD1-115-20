@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        h2{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Заполните форму</h2>
+
+<form action="http://fe.it-academy.by/TestForm.php">
+    <fieldset>
+        <legend>Личные данные</legend>
+        <input type="text" name="lastname" maxlength="25" placeholder="Фамилия" required autofocus ><br>
+        <input type="text" name="firstname" maxlength="20" placeholder="Имя" required><br>
+        <input type="text" name="patronymic" maxlength="24" placeholder="Отчество" required><br>
+
+        <fieldset>
+            <legend>Паспортные данные</legend>
+            <input type="text" name="mc" maxlength="2" placeholder="MC" required>
+            <input type="text" name="identityNumber" maxlength="7" placeholder="Number" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Дата рождения</legend>
+            <input type="text" name="birthday" maxlength="4" placeholder="1988" required>  <br>
+            <select name="month">
+                <option value="1">Январь</option>
+                <option value="2">Февраль</option>
+                <option value="3">Март</option>
+                <option value="4">Апрель</option>
+                <option value="5">Май</option>
+            </select> <br>
+            <input type="number" name="identityNumber" maxlength="7" placeholder="Number" required>
+        </fieldset>
+        <select name="country">
+            <option value="1">РБ</option>
+        </select> <br>
+        <label>
+            Адрес: <br>
+            <textarea name="adress" id="" cols="30" rows="10"></textarea>
+        </label>
+
+        <fieldset>
+            <legend>Интересы</legend>
+            <fieldset>
+                <legend>Хобби</legend>
+                <input type="checkbox[]" name="fish">Рыбалка <br>
+                <input type="checkbox" name="astronomy">Астрономия <br>
+                <input type="checkbox" name="daiving">Дайвиг <br>
+                <input type="checkbox" name="mark">Марки
+            </fieldset>
+        </fieldset>
+
+
+
+        <button type="submit">send</button>
+    </fieldset>
+
+
+</form>
+
+
+</body>
+</html>
