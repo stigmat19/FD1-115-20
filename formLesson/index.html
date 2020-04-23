@@ -19,6 +19,21 @@
         select{
             width: 100px;
         }
+        .aaa{
+            width: 300px;
+            height: 300px;
+            background-color: red;
+            margin: 0 auto;
+            position: relative;
+        }
+        .bbb{
+            width: 50px;
+            height: 50px;
+            background-color: blue;
+            position: absolute;
+            top:  50px;
+            left: 50px;
+        }
     </style>
     <title>Document</title>
 </head>
@@ -74,6 +89,32 @@
         <input type="radio" name="test" value="val3">
 
     </form>
+
+
+    <datalist id="animalslist">
+        <option value="собака">
+        <option value="кошка">
+        <option value="попугай">
+    </datalist>
+
+
+    <form action="http://fe.it-academy.by/TestForm.php">
+        <input type=text list="animalslist">
+
+        <input type="text" name="email" pattern="+[0-9]{13}" required>
+        <input type="range" name="range" min="20" max="100" step="20">
+        <input type="number" name="number" min="20" max="100" step="20">
+        <input type="date" name="date">
+        <input type="color" name="color">
+
+        <input type="submit">
+    </form>
+
+
+    <div class="aaa">
+        <div class="bbb"></div>
+    </div>
+
 
 
 </body>

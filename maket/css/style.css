@@ -102,8 +102,13 @@ h4{
     background-color: #fff;
     color: #333;
     font-weight: 500;
-    padding-top: 17px;
     text-align: center;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.slider .btn i{
+    margin-left: 16px;
+    font-size: 18px;
 }
 
 /*welcome*/
@@ -134,16 +139,19 @@ h4{
 .welcome ul li:last-child{
     margin-right: 0;
 }
-.welcome ul li:hover .more{
+.welcome ul li:hover .more, .welcome ul li:hover .icon i{
     color: #5b5b5b;
     cursor: pointer;
 }
 .welcome .icon{
     width: 82px;
     height: 61px;
-    background: url('../img/diamant.png') no-repeat center #fff;
-    background-size: contain;
     margin: -22px auto 40px;
+    background: #fff;
+}
+
+.welcome .icon i{
+    font-size: 54px;
 }
 .welcome h4{
     color: #333;
@@ -211,7 +219,8 @@ h4{
 }
 
 .recent_work .shadow{
-    background: url('../img/plus.png') no-repeat center 114px rgba(51, 51, 51, 0.5);
+    /*background: url('../img/plus.png') no-repeat center 114px;*/
+    background: rgba(51, 51, 51, 0.5);
     position: absolute;
     width: 100%;
     height: 377px;
@@ -222,6 +231,25 @@ h4{
     /*transition: 0.5s;*/
     /*display: none;*/
     visibility: hidden;
+}
+.recent_work .shadow i{
+    width: 54px;
+    height: 54px;
+    color: #fff;
+    position: absolute;
+    font-size: 42px;
+    left: 50%;
+    margin-left: -27px;
+    top: 120px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    display: block;
+}
+.fa-plus:before {
+    content: "\f067";
+    position: absolute;
+    left: 5px;
+    top: 3px;
 }
 .recent_work .descr-bottom{
     height: 81px;
@@ -320,22 +348,44 @@ h4{
     left: -41px;
     transition: 0.5s;
 }
-.who_work_with_us .social > div{
+.who_work_with_us .social i{
     width: 41px;
     height: 41px;
+    display: block;
+    background: #fff;
+    font-size: 28px;
+    position: relative;
+    border-left: 1px solid transparent;
 }
-.who_work_with_us .social > div:first-child{
-    background-color: red;
+.who_work_with_us .social i:hover{
+    color: black;
+    border-right: 1px solid black;
 }
-.who_work_with_us .social > div:nth-child(2){
-    background-color: green;
+.fa-facebook-f:before {
+    content: "\f39e";
+    position: absolute;
+    top: 6px;
+    left: 10px;
 }
-.who_work_with_us .social > div:nth-child(3){
-    background-color: blue;
+.fa-twitter:before {
+    content: "\f099";
+    position: absolute;
+    top: 6px;
+    left: 7px;
 }
-.who_work_with_us .social > div:last-child{
-    background-color: yellow;
+.fa-dribbble:before {
+    content: "\f17d";
+    position: absolute;
+    top: 6px;
+    left: 7px;
 }
+.fa-instagram-square:before {
+    content: "\f955";
+    position: absolute;
+    top: 6px;
+    left: 8px;
+}
+
 /*best_pricing*/
 .best_pricing{
     padding-top: 60px;
