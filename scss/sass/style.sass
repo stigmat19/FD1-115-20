@@ -1,0 +1,39 @@
+@import "mixins"
+@import "variables"
+
+
+
+h1,
+p
+  font-family: 'Lato', sans-serif
+
+p
+  color: red
+
+  span
+    color: green
+
+.header
+  height: 50px
+  background-color: aqua
+  .container
+    width: 1140px
+    margin: 0 auto
+    background:
+      color: palevioletred
+      repeat: no-repeat
+    ul
+      li
+        border: $dist - 5 solid green
+        +customButton
+
+
+
+
+section
+  +customButton
+
+
+
+
+

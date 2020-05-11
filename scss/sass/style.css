@@ -1,0 +1,74 @@
+h1,
+p {
+  font-family: "Lato", sans-serif; }
+
+p {
+  color: red; }
+  p span {
+    color: green; }
+
+.header {
+  height: 50px;
+  background-color: aqua; }
+  .header .container {
+    width: 1140px;
+    margin: 0 auto;
+    background-color: palevioletred;
+    background-repeat: no-repeat; }
+    .header .container ul li {
+      border: 5px solid green; }
+      .header .container ul li a {
+        display: inline-block;
+        color: white;
+        text-decoration: none;
+        padding: 0.5em 2em;
+        outline: none;
+        border-width: 2px 0;
+        border-style: solid none;
+        border-color: #FDBE33 #000 #D77206;
+        border-radius: 6px;
+        background: -webkit-gradient(linear, left top, left bottom, from(#F3AE0F), to(#E38916)) #E38916;
+        background: linear-gradient(#F3AE0F, #E38916) #E38916;
+        -webkit-transition: 0.2s;
+        transition: 0.2s; }
+        .header .container ul li a span {
+          font-family: serif;
+          font-weight: bold;
+          font-size: 20px;
+          font-style: italic;
+          font-variant: small-caps; }
+      .header .container ul li a:hover {
+        background: -webkit-gradient(linear, left top, left bottom, from(#f5ae00), to(#f59500)) #f5ae00;
+        background: linear-gradient(#f5ae00, #f59500) #f5ae00; }
+      .header .container ul li a:active {
+        background: -webkit-gradient(linear, left top, left bottom, from(#f59500), to(#f5ae00)) #f59500;
+        background: linear-gradient(#f59500, #f5ae00) #f59500; }
+
+section a {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  padding: 0.5em 2em;
+  outline: none;
+  border-width: 2px 0;
+  border-style: solid none;
+  border-color: #FDBE33 #000 #D77206;
+  border-radius: 6px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#F3AE0F), to(#E38916)) #E38916;
+  background: linear-gradient(#F3AE0F, #E38916) #E38916;
+  -webkit-transition: 0.2s;
+  transition: 0.2s; }
+  section a span {
+    font-family: serif;
+    font-weight: bold;
+    font-size: 20px;
+    font-style: italic;
+    font-variant: small-caps; }
+section a:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#f5ae00), to(#f59500)) #f5ae00;
+  background: linear-gradient(#f5ae00, #f59500) #f5ae00; }
+section a:active {
+  background: -webkit-gradient(linear, left top, left bottom, from(#f59500), to(#f5ae00)) #f59500;
+  background: linear-gradient(#f59500, #f5ae00) #f59500; }
+
+/*# sourceMappingURL=style.sass.map */

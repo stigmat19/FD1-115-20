@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div.aaa{
+            width: 500px;
+            transition-duration: 2s;
+            transition-timing-function: ease;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            font-size: 20px;
+            animation: MyAnimation1 3s 3;
+        }
+        div.aaa:hover{
+            background-color: green;
+        }
+        @keyframes MyAnimation1
+        {
+            from { background-color: red; }
+            to { background-color: blue; }
+        }
+
+
+        .border{
+            width: 0;
+            height: 0;
+            border: 30px solid blue;
+        }
+
+        #star-six {
+            width: 0;
+            height: 0;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+            border-bottom: 100px solid red;
+            position: relative;
+        }
+        #star-six:after {
+            width: 0;
+            height: 0;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+            border-top: 100px solid red;
+            position: absolute;
+            content: "";
+            top: 30px;
+            left: -50px;
+        }
+    </style>
+</head>
+<body>
+
+
+<div class="aaa">hello</div>
+
+<div class="border"></div>
+
+<div id="star-six"></div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<a href="tel:+375292222222">tel</a>
+
+</body>
+</html>
